@@ -35,7 +35,7 @@ When you are applying to 50 jobs daily, typing Name, Email, Phone, Experience, L
 
 ## How to Use
 
-1. Click extension icon > Fill your profile once (Target Job Title, Target City, Name, Email, Total Experience (Years), Current CTC (₹), Expected CTC (₹), Phone, Experience, Current CTC (₹), Expected CTC (₹), Notice Period)
+1. Click extension icon > Fill your profile once (Target Job Title, Target City, Name, Email, Total Experience (Years), Phone, Experience, Current CTC (₹), Expected CTC (₹), Notice Period)
 2. Open any Job Application page
 3. Click `Auto-Fill` - Form fills in 2 seconds
 4. Check details and click Submit
