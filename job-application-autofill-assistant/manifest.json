@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Job Application Auto-Fill Assistant",
+  "version": "1.2.2",
+  "author": "Chandresh Suvarna",
+  "description": "Developed by Chandresh Suvarna - Fills job application fields from your saved profile on LinkedIn, Naukri, Shine, Indeed, Foundit and Michael Page.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*",
+    "https://*.naukri.com/*",
+    "https://*.shine.com/*",
+    "https://*.indeed.com/*",
+    "https://*.foundit.in/*",
+    "https://*.michaelpage.co.in/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/jobs/*",
+        "https://*.naukri.com/*",
+        "https://*.shine.com/*",
+        "https://*.indeed.com/*",
+        "https://*.foundit.in/*",
+        "https://*.michaelpage.co.in/*"
+      ],
+      "js": [
+        "content.js",
+        "indeed.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
